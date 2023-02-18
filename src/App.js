@@ -17,8 +17,8 @@ function App() {
       <Home />
       <About />
       <Skills />
-      <Talkwithme />
       <Projects />
+      <Talkwithme />
     </div>
   );
 }
