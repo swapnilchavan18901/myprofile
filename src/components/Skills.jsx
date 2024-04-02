@@ -34,31 +34,26 @@ function Skills() {
           <Fade duration={1000} delay={1500}>
             <CARD>
               <IMG src={js} />
-              <span>JavaScript</span>
             </CARD>
           </Fade>
           <Fade duration={1000} delay={1500}>
             <CARD>
               <IMG src={react} />
-              <span>React</span>
             </CARD>
           </Fade>
           <Fade duration={1000} delay={1500}>
             <CARD>
               <IMG src={HTML} />
-              <span>HTML 5</span>
             </CARD>
           </Fade>
           <Fade duration={1000} delay={1500}>
             <CARD>
               <IMG src={CSS} />
-              <span>CSS 3</span>
             </CARD>
           </Fade>
           <Fade duration={1000} delay={1500}>
             <CARD>
               <IMG src={bootstrap} />
-              <span>Bootstrap</span>
             </CARD>
           </Fade>
         </SKILLS>
@@ -71,31 +66,26 @@ function Skills() {
           <Fade duration={1000} delay={1500}>
             <CARD>
               <IMG src={mongodb} />
-              <span>MongoDB</span>
             </CARD>
           </Fade>
           <Fade duration={1000} delay={1500}>
             <CARD>
               <IMG src={NODEJS} />
-              <span>NodeJS</span>
             </CARD>
           </Fade>
           <Fade duration={1000} delay={1500}>
             <CARD>
               <IMG src={express} />
-              <span>Express Js</span>
             </CARD>
           </Fade>
           <Fade duration={1000} delay={1500}>
             <CARD>
               <IMG src={postman} />
-              <span>Postman</span>
             </CARD>
           </Fade>
           <Fade duration={1000} delay={1500}>
             <CARD>
               <IMG src={mysql} />
-              <span>MySQL</span>
             </CARD>
           </Fade>
         </SKILLS>
@@ -109,55 +99,46 @@ function Skills() {
             <Fade duration={1000} delay={1500}>
               <CARD>
                 <IMG src={git} />
-                <span>Git</span>
               </CARD>
             </Fade>
             <Fade duration={1000} delay={1500}>
               <CARD>
                 <IMG src={github} />
-                <span>Github</span>
               </CARD>
             </Fade>
             <Fade duration={1000} delay={1500}>
               <CARD>
                 <IMG src={figma} />
-                <span>Figma</span>
               </CARD>
             </Fade>
             <Fade duration={1000} delay={1500}>
               <CARD>
                 <IMG src={c} />
-                <span>C</span>
               </CARD>
             </Fade>
             <Fade duration={1000} delay={1500}>
               <CARD>
                 <IMG src={cpp} />
-                <span>C++</span>
               </CARD>
             </Fade>
             <Fade duration={1000} delay={1500}>
               <CARD>
                 <IMG src={android} />
-                <span>Android Development</span>
               </CARD>
             </Fade>
             <Fade duration={1000} delay={1500}>
               <CARD>
                 <IMG src={python} />
-                <span>Python</span>
               </CARD>
             </Fade>
             <Fade duration={1000} delay={1500}>
               <CARD>
                 <IMG src={java} />
-                <span>Java</span>
               </CARD>
             </Fade>
             <Fade duration={1000} delay={1500}>
               <CARD>
                 <IMG src={php} />
-                <span>PHP</span>
               </CARD>
             </Fade>
           </SKILLS2>
@@ -171,73 +152,115 @@ export default Skills;
 const DIV = styled.div`
   display: flex;
   flex-direction: column;
-  background: #212529;
-  width: 100%;
-  height: 100vh;
+
+  // width: 100%;
+  height: 115vh;
 
   // justify-content: center;
   align-items: center;
+  @media (max-width: 400px) {
+    margin: 0px;
+    // align-items: start;
+    width: 400px;
+  }
 `;
 const Header = styled.div`
-  font-size: 40px;
+  font-size: 30px;
   letter-spacing: 3px;
-  color: #ffff;
-  margin-top: 80px;
-  border-top: 2px solid rgb(255, 221, 64);
+  color: #fff;
+
+  text-align: center;
+  border-top: 2px solid #000;
   width: 1200px;
+  @media (max-width: 400px) {
+    margin: 0px;
+    width: 390px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+  }
 `;
 const Header2 = styled.div`
-  color: #ffff;
+  color: #fff;
   letter-spacing: 2px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
+  margin: 4px;
+
+  text-align: center;
+  @media (max-width: 400px) {
+    font-size: 15px;
+    margin: 10px;
+
+    text-align: center;
+  }
 `;
 const BGcontent = styled.div`
-  disply: flex;
   margin: 6px;
-  flex-direction: column;
-  align-items: center;
 `;
 const CONTENT = styled.div`
   margin: 6px;
 `;
 const CONTENT2 = styled.div`
   display: flex;
+
   width: 100%;
 `;
 const SKILLS2 = styled.div`
   display: grid;
+  gap: 20px;
 
   grid-template-columns: repeat(5, 1fr);
+  @media (max-width: 400px) {
+    grid-gap: 20px;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 const SKILLS = styled.div`
-  display: flex;
-
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
-  justify-content: center;
+  @media (max-width: 400px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 const CARD = styled.div`
-  // width: 80px;
-  margin: 10px;
+  width: 150px;
+  height: 80px;
+  // margin: 10px;
   display: flex;
+
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  color: white;
-  border: 2px solid rgb(255, 221, 64);
-  padding-top: 15px;
-  padding-bottom: 20px;
-  height: 130px;
+  // flex-direction: column;
+  color: #fff;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
 
-  box-shadow: rgb(255, 221, 64) 0px 4px 8px -2px,
-    rgb(255, 221, 64) 0px 0px 0px 1px;
-  span {
-    font-size: 19px;
-    margin: 5px;
+  box-shadow: #000 0px 4px 8px -2px;
+  @media (max-width: 400px) {
+    margin: 0px;
+    width: 110px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 80px;
+    justify-content: none;
+    align-items: none;
   }
 `;
 const IMG = styled.img`
-  width: 100px;
-  height: 100px;
-  padding: 10px 10px; ;
+  width: 80px;
+  height: 50px;
+  // padding: 10px 10px;
+  @media (max-width: 400px) {
+    // margin: 60px;
+    width: 60px;
+
+    // padding: 10px 10px;
+  }
 `;

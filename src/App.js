@@ -1,25 +1,32 @@
-import React, { Component } from "react";
+import React from "react";
+import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Skills from "./components/Skills";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
-import Talkwithme from "./components/Talkwithme";
 import "font-awesome/css/font-awesome.css";
-import "bootstrap/dist/css/bootstrap.css";
-import "./App.css";
 import About from "./components/About";
-import Projects from "./components/Projects";
+import "./App.css";
 import "animate.css";
+import Sliderprjcts from "./components/Sliderprjcts";
+import Contactuspage from "./components/contactuspage";
+import LoadAvatar from "./components/loadavatar";
+import { Canvas } from "@react-three/fiber";
+import { Experience } from "./components/experience";
+
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <NavBar />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Talkwithme />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/works" element={<Sliderprjcts />} />
+        <Route path="/contact" element={<Contactuspage />} />
+        <Route path="/avatar" element={<LoadAvatar />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

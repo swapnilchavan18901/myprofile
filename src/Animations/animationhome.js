@@ -20,11 +20,11 @@ const nudgeText = keyframes`
 
 const colorText = keyframes`
  21% { color: #fff; }
-30% { color: rgb(255, 221, 64); }
+30% { color: #c778dd; }
 51% { color: #fff; }
-60% { color: rgb(255, 221, 64); }
+60% { color: #c778dd; }
 81% { color: #fff; }
-90% { color: rgb(255, 221, 64); } `;
+90% { color: #c778dd; } `;
 const nudgeMouse = keyframes` 
 0% { transform: translateY(0); }
 20% { transform: translateY(2px); }
@@ -98,27 +98,27 @@ const trackBallSlide = keyframes` 0% {
 const colorSlide = keyframes`
 0% { background-position: 0% 100%; }
   20% { background-position: 0% 0%; }
-  21% { background-color:  rgb(255, 221, 64); }
+  21% { background-color:  #c778dd; }
   29.99% { 
     background-color: #212529;
     background-position: 0% 0%;
   }
   30% { 
-    background-color:  rgb(255, 221, 64);
+    background-color:  #c778dd;
     background-position: 0% 100%;
   }
   50% { background-position: 0% 0%; }
-  51% { background-color:  rgb(255, 221, 64); }
+  51% { background-color:  #c778dd; }
   59% { 
     background-color: #212529;
     background-position: 0% 0%;
   }
   60% { 
-    background-color:  rgb(255, 221, 64);
+    background-color:  #c778dd;
     background-position: 0% 100%;
   }
   80% { background-position: 0% 0%; }
-  81% { background-color:  rgb(255, 221, 64); }
+  81% { background-color:  #c778dd; }
   90%, 100% { background-color: #212529; }`;
 
 const animate__bounce = keyframes`
