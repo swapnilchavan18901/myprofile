@@ -8,8 +8,9 @@
 body {
   margin: 0;
   /* background: #b4dbc0; */
-  color: white;
-  background-color: #000;
+  color: #ffff;
+  background-color: #070917;
+  /* font-stretch: ; */
   /* background-image: linear-gradient(316deg, #dbcbd8 0%, #2e4057 74%); */
   font-family: "Gruppo", cursive;
   overflow: hidden;

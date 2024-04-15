@@ -35,28 +35,33 @@ function ProjectCard({ color, title, desc, github, video, imgPath, tags }) {
 export default ProjectCard;
 const ARTICLE = styled.div`
   display: flex;
-  height: 400px;
-  border: 2px solid #fff;
-  border-radius: 20px;
-
+  height: 300px;
+  background: #151627;
   @media (max-width: 400px) {
     flex-direction: column;
     width: 380px;
-    height: max-content;
+    // height: max-content;
+    height: 1000px;
 
     // justify-content: center;
     align-items: center;
   }
 `;
 const DESC = styled.div`
-  font-size: 23px;
+  font-size: 17px;
+  font-family: "Helvetica";
+  color: #dee1e6;
+  @media (max-width: 400px) {
+    font-size: 13px;
+    padding: 10px;
+  }
 `;
 const TEXT = styled.div`
   a {
     font-size: 30px;
-    //   color: #fff;
+    //     color: #dee1e6;
 
-    color: #fff;
+    color: #dee1e6;
   }
   h1 {
     margin: 20px;
@@ -69,22 +74,28 @@ const TEXT = styled.div`
 `;
 const Sdiv1 = styled.div`
   padding: 20px 20px 20px 20px;
+
   @media (max-width: 400px) {
-    padding: 20px 0px 0px 0px;
-    width: 300px;
-    height: 300px;
+    padding: 10px 0px 0px 0px;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
     border-right: 0px solid #fff;
   }
 `;
 const Sdiv2 = styled.div`
   padding-left: 30px;
-  color: #fff;
+  color: #dee1e6;
 
   padding-right: 30px;
   font-size: 20px;
   @media (max-width: 400px) {
     padding-left: 0px;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 `;
 const IMG = styled.img`
@@ -94,6 +105,9 @@ const IMG = styled.img`
   border-right: 2px solid #fff;
   @media (max-width: 400px) {
     border-right: 0px;
+    height: 160px;
+    width: 160px;
+    padding-right: 0px;
   }
 `;
 const BTDIV = styled.div``;
@@ -104,7 +118,7 @@ const BUTTON = styled.button`
   margin-top: 30px;
   background-color: transparent;
   border: 2px solid #fff;
-  color: #fff;
+  color: #dee1e6;
 
   @media (max-width: 400px) {
     width: 80px;

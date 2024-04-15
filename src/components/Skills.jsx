@@ -1,101 +1,61 @@
 import React from "react";
 import styled from "styled-components";
-import js from "../assets/javascriptimg.png";
+import js from "../assets/JS.png";
 import mongodb from "../assets/mongodb.png";
-import bootstrap from "../assets/bootstrap.png";
 import CSS from "../assets/CSS.png";
 import HTML from "../assets/HTML5.png";
+import TW from "../assets/tailwind.png";
 import NODEJS from "../assets/nodejs.png";
 import react from "../assets/react.png";
 import git from "../assets/git.png";
-import github from "../assets/github.png";
 import mysql from "../assets/mysql.png";
-import figma from "../assets/figma.png";
-import c from "../assets/c.png";
-import cpp from "../assets/c++.png";
-import android from "../assets/android.png";
-import postman from "../assets/postman.png";
-import php from "../assets/php.png";
-import express from "../assets/express.png";
-import java from "../assets/java.png";
-import python from "../assets/python.png";
+
+import firebase from "../assets/firebase.png";
+
 import Fade from "react-reveal/Fade";
 function Skills() {
   return (
-    <DIV name="skills">
-      {/* <Fade duration={1000} delay={1000}> */}
-      <Header>Skills</Header>
-      {/* </Fade> */}
-      <CONTENT>
-        <Fade duration={1000} delay={1000}>
-          <Header2>Front-end</Header2>
-        </Fade>
-        <SKILLS>
-          <Fade duration={1000} delay={1500}>
-            <CARD>
-              <IMG src={js} />
-            </CARD>
-          </Fade>
-          <Fade duration={1000} delay={1500}>
-            <CARD>
-              <IMG src={react} />
-            </CARD>
-          </Fade>
-          <Fade duration={1000} delay={1500}>
-            <CARD>
-              <IMG src={HTML} />
-            </CARD>
-          </Fade>
-          <Fade duration={1000} delay={1500}>
-            <CARD>
-              <IMG src={CSS} />
-            </CARD>
-          </Fade>
-          <Fade duration={1000} delay={1500}>
-            <CARD>
-              <IMG src={bootstrap} />
-            </CARD>
-          </Fade>
-        </SKILLS>
-      </CONTENT>
-      <CONTENT>
-        <Fade duration={1000} delay={1000}>
-          <Header2>Back-end</Header2>
-        </Fade>
-        <SKILLS>
-          <Fade duration={1000} delay={1500}>
-            <CARD>
-              <IMG src={mongodb} />
-            </CARD>
-          </Fade>
-          <Fade duration={1000} delay={1500}>
-            <CARD>
-              <IMG src={NODEJS} />
-            </CARD>
-          </Fade>
-          <Fade duration={1000} delay={1500}>
-            <CARD>
-              <IMG src={express} />
-            </CARD>
-          </Fade>
-          <Fade duration={1000} delay={1500}>
-            <CARD>
-              <IMG src={postman} />
-            </CARD>
-          </Fade>
-          <Fade duration={1000} delay={1500}>
-            <CARD>
-              <IMG src={mysql} />
-            </CARD>
-          </Fade>
-        </SKILLS>
-      </CONTENT>
-      <BGcontent>
-        <Fade duration={1000} delay={1000}>
-          <Header2>Others</Header2>
-        </Fade>
-        <CONTENT2>
+    <>
+      <Fade duration={1000} delay={1100}>
+        <Header>
+          Skills{" "}
+          <Header2>
+            My focused Technologies:current areas of proficiency
+          </Header2>{" "}
+        </Header>
+      </Fade>
+
+      <DIV name="skills">
+        {/* <Fade duration={1000} delay={1000}> */}
+
+        {/* </Fade> */}
+        <BGcontent>
           <SKILLS2>
+            <Fade duration={1000} delay={1500}>
+              <CARD>
+                <IMG src={HTML} />
+              </CARD>
+            </Fade>
+            <Fade duration={1000} delay={1500}>
+              <CARD>
+                <IMG src={CSS} />
+              </CARD>
+            </Fade>
+            <Fade duration={1000} delay={1500}>
+              <CARD>
+                <IMG src={js} />
+              </CARD>
+            </Fade>
+            <Fade duration={1000} delay={1500}>
+              <CARD>
+                <IMG src={react} />
+              </CARD>
+            </Fade>
+            <Fade duration={1000} delay={1500}>
+              <CARD>
+                <IMG src={TW} />
+              </CARD>
+            </Fade>
             <Fade duration={1000} delay={1500}>
               <CARD>
                 <IMG src={git} />
@@ -103,48 +63,29 @@ function Skills() {
             </Fade>
             <Fade duration={1000} delay={1500}>
               <CARD>
-                <IMG src={github} />
+                <IMG src={NODEJS} />
               </CARD>
             </Fade>
             <Fade duration={1000} delay={1500}>
               <CARD>
-                <IMG src={figma} />
+                <IMG src={mongodb} />
               </CARD>
             </Fade>
             <Fade duration={1000} delay={1500}>
               <CARD>
-                <IMG src={c} />
+                <IMG src={mysql} />
               </CARD>
             </Fade>
+
             <Fade duration={1000} delay={1500}>
               <CARD>
-                <IMG src={cpp} />
-              </CARD>
-            </Fade>
-            <Fade duration={1000} delay={1500}>
-              <CARD>
-                <IMG src={android} />
-              </CARD>
-            </Fade>
-            <Fade duration={1000} delay={1500}>
-              <CARD>
-                <IMG src={python} />
-              </CARD>
-            </Fade>
-            <Fade duration={1000} delay={1500}>
-              <CARD>
-                <IMG src={java} />
-              </CARD>
-            </Fade>
-            <Fade duration={1000} delay={1500}>
-              <CARD>
-                <IMG src={php} />
+                <IMG src={firebase} />
               </CARD>
             </Fade>
           </SKILLS2>
-        </CONTENT2>
-      </BGcontent>
-    </DIV>
+        </BGcontent>
+      </DIV>
+    </>
   );
 }
 
@@ -154,7 +95,7 @@ const DIV = styled.div`
   flex-direction: column;
 
   // width: 100%;
-  height: 115vh;
+  height: 100vh;
 
   // justify-content: center;
   align-items: center;
@@ -162,50 +103,48 @@ const DIV = styled.div`
     margin: 0px;
     // align-items: start;
     width: 400px;
+    height: 40vh;
   }
 `;
 const Header = styled.div`
-  font-size: 30px;
-  letter-spacing: 3px;
-  color: #fff;
-
-  text-align: center;
-  border-top: 2px solid #000;
-  width: 1200px;
+  font-weight: bold;
+  color: #292040;
+  font-family: "Helvetica", cursive;
+  height: 170px;
+  font-size: 150px;
+  letter-spacing: 15px;
+  display: flex;
   @media (max-width: 400px) {
     margin: 0px;
     width: 390px;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     padding-top: 20px;
   }
 `;
 const Header2 = styled.div`
-  color: #fff;
-  letter-spacing: 2px;
+  color: #7e8492;
+  letter-spacing: 0px;
   font-size: 20px;
-  font-weight: bold;
-  margin: 4px;
+  width: 350px;
+  position: absolute;
+  top: 100px;
+  left: 140px;
 
-  text-align: center;
   @media (max-width: 400px) {
     font-size: 15px;
     margin: 10px;
-
+    display: none;
     text-align: center;
   }
 `;
 const BGcontent = styled.div`
   margin: 6px;
-`;
-const CONTENT = styled.div`
-  margin: 6px;
-`;
-const CONTENT2 = styled.div`
   display: flex;
-
-  width: 100%;
+  align-items: center;
+  height: 200px;
 `;
+
 const SKILLS2 = styled.div`
   display: grid;
   gap: 20px;
@@ -217,20 +156,14 @@ const SKILLS2 = styled.div`
     grid-template-columns: repeat(3, 1fr);
   }
 `;
-const SKILLS = styled.div`
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  @media (max-width: 400px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-`;
+
 const CARD = styled.div`
   width: 150px;
   height: 80px;
   // margin: 10px;
   display: flex;
-
+  border: 1px solid #fff;
+  border-radius: 5px;
   justify-content: center;
   align-items: center;
   // flex-direction: column;
@@ -257,7 +190,8 @@ const IMG = styled.img`
   width: 80px;
   height: 50px;
   // padding: 10px 10px;
-  @media (max-width: 400px) {
+  filter: invert(100%) sepia(0%) saturate(1146%) hue-rotate(322deg)
+    brightness(107%) contrast(103%) @media (max-width: 400px) {
     // margin: 60px;
     width: 60px;
 

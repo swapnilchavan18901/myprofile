@@ -17,12 +17,10 @@ function Talkwithme() {
               <SH2>Let me know about you !</SH2>
             </Headers>
             <Content>
-              <Input1 type="text" placeholder="First Name" />
-              <Input1 type="text" placeholder="Last Name" />
+              <Input1 type="text" placeholder="Name" />
             </Content>
             <Content>
               <Input1 type="text" placeholder="Mail" />
-              <Input1 type="text" placeholder="Phone" />
             </Content>
             <Content>
               <Input2 type="text" placeholder="Message" />
@@ -82,22 +80,7 @@ const Div = styled.div`
     justify-content: center;
   }
 `;
-const DIV1 = styled.div`
-  // background: red;
-  margin: 10px;
-  padding-top: 30px;
-  width: 40%;
-  @media (max-width: 400px) {
-    display: none;
-  }
-`;
-const DIV2 = styled.div`
-  width: 60%;
-  // background: green;
-  padding-top: 30px;
-  @media (max-width: 400px) {
-  }
-`;
+
 const Sdiv = styled.div``;
 
 const SH = styled.div`
@@ -112,7 +95,7 @@ const Content = styled.div`
   justify-content: center;
 `;
 const Input1 = styled.input`
-  width: 200px;
+  width: 300px;
   height: 30px;
   border-radius: 4px;
   margin: 10px;
@@ -130,7 +113,7 @@ const Input1 = styled.input`
 `;
 const Input2 = styled.textarea`
   color: #fff;
-  width: 460px;
+  width: 300px;
   height: 60px;
   border-radius: 4px;
   // margin: 10px;
@@ -147,12 +130,12 @@ const Input2 = styled.textarea`
 `;
 
 const Button = styled.button`
-  width: 300px;
-  height: 50px;
+  width: 100px;
+  height: 30px;
   margin: 20px;
   border-radius: 4px;
   border: 1px solid #fff;
-
+  cursor: pointer;
   color: #ffff;
   background: transparent;
   transition: all 250ms ease-in-out;

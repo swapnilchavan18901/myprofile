@@ -33,7 +33,10 @@ const data = [
 function Sliderprjcts() {
   return (
     <DIV className="main-swiper" id="projectSliderContainer" name="projects">
-      <Headers>Projects</Headers>
+      <Headers>
+        PROJECTS
+        <Header2>featured work and project showcase</Header2>
+      </Headers>
       <Swiper
         style={{ maxWidth: "100vw", scrollX: "hidden" }}
         autoplay={{
@@ -72,16 +75,35 @@ const DIV = styled.div`
   display: flex;
   height: 100vh;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  s @media (max-width: 400px) {
+  @media (max-width: 400px) {
     width: 400px;
     padding-top: 0px;
   }
 `;
 const Headers = styled.div`
-  // padding: 80px;
-  // margin: 30p  x;
-  font-size: 40px;
-  color: #fff;
+  font-size: 100px;
+  font-weight: bold;
+  color: #292040;
+  padding-left: 50px;
+  font-family: "Helvetica", cursive;
+
+  @media (max-width: 400px) {
+    font-size: 40px;
+  }
+`;
+const Header2 = styled.div`
+  color: #7e8492;
+  letter-spacing: 0px;
+  font-size: 20px;
+  width: 350px;
+  position: absolute;
+  top: 130px;
+  left: 230px;
+
+  @media (max-width: 400px) {
+    font-size: 15px;
+    margin: 10px;
+    display: none;
+    text-align: center;
+  }
 `;

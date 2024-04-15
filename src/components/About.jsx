@@ -6,54 +6,79 @@ import Zoom from "react-reveal/Zoom";
 const About = () => {
   return (
     <DIV name="about">
-      <Content>
-        <Div1>
-          <Fade delay={1500}>
-            <Img src={prf} />
-          </Fade>
-        </Div1>
-        <Div2>
-          <Fade duration={2000} delay={1500}>
-            <Content2>
-              Hello! Myself Swapnil. I have completed my&nbsp;
-              <u>Diploma in Computer Engineering</u>, Currently I am
-              pursuing&nbsp;
-              <u>Bachelor of Engineering in PHCET college</u>. I have 3 years of
-              experience in web development. I have completed many
-              projects,currently some of them are in production. My journey in
-              the world of software development began during academic years of
-              diploma. My interest in web development and problem-solving
-              started back in 2020 when we undertook a project during the second
-              semester of our college program. This commitment for continuous
-              learning ensures that I can deliver cutting-edge solutions that
-              meet the evolving needs of clients and end-users.
-            </Content2>
-          </Fade>
-        </Div2>
-      </Content>
+      <Fade delay={1100}>
+        <HEADER>ABOUT </HEADER>{" "}
+      </Fade>
+
+      <div>
+        <Content>
+          <Div1>
+            <Fade delay={1500}>
+              <Img src={prf} />
+            </Fade>
+          </Div1>
+          <Div2>
+            <Fade duration={2000} delay={1500}>
+              <Content2>
+                Hey there! I'm Swapnil, a Computer Engineering Graduate fueled
+                by a passion for crafting innovative software solutions. With a
+                solid foundation in programming languages, algorithms, and
+                system architecture, I thrive on tackling complex challenges and
+                engineering solutions that exceed expectations. With 3 years of
+                experience, I've worked on diverse projects spanning web
+                development, mobile applications, and embedded systems. I bring
+                a blend of technical expertise and creative problem-solving
+                skills to every project, ensuring that every line of code
+                contributes to a seamless user experience.
+                <br />
+                &nbsp; You must be thinking What sets me apart from other right?
+                It's my unwavering commitment to excellence and innovation. I
+                approach each project with meticulous attention to detail and a
+                focus on delivering tangible results. I pride myself on my
+                ability to collaborate effectively with clients and stakeholders
+                to understand their needs and translate them into actionable
+                solutions. Whether you're a startup with a bold vision or an
+                established enterprise seeking to enhance your digital presence,
+                I'm here to help. Let's work together to turn your ideas into
+                reality and create software that makes a difference. Ready to
+                get started? Reach out, and let's explore how we can collaborate
+                to achieve your goals.
+              </Content2>
+            </Fade>
+          </Div2>
+        </Content>
+      </div>
     </DIV>
   );
 };
 
 export default About;
+const HEADER = styled.div`
+  height: 130px;
+  padding-left: 80px;
+  font-size: 80px;
+  padding-bottom: 70px;
+  font-weight: bold;
+  color: #292040;
+  font-family: "Helvetica", cursive;
+`;
 const DIV = styled.div`
   display: flex;
-  // align-items: center;
+  width: 1200px;
   height: 100vh;
-  justify-content: center;
-
+  // padding-top: 50px;
+  flex-direction: column;
   @media (max-width: 400px) {
     height: 100vh;
     width: 400px;
   }
 `;
 const Div1 = styled.div`
-  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 180px;
-
+  height: 200px;
+  padding: 40px;
   @media (max-width: 400px) {
     display: flex;
     width: 400px;
@@ -80,8 +105,9 @@ const Img = styled.img`
   // padding: 20px 20px 20px 20px;
 
   border-radius: 100px;
-  width: 150px;
-  height: 150px;
+  width: 300px;
+
+  height: 300px;
   @media (max-width: 400px) {
     width: 300px;
 
@@ -96,16 +122,14 @@ const Content = styled.div`
   display: flex;
 
   // text-align: left;
-  width: 1100px;
   word-spacing: 3px;
   // justify-content: center;
   align-items: center;
   // height: 30vh;
-  flex-direction: column;
+  // flex-direction: column;
   // color: #282c35;
   color: #fff;
 
-  font-size: 17px;
   @media (max-width: 400px) {
     flex-direction: column;
     margin-top: 0vh;
@@ -115,15 +139,15 @@ const Content = styled.div`
 `;
 
 const Content2 = styled.div`
-  font-size: 28px;
+  font-size: 18px;
   // color: #100c08;
   color: #fff;
 
   // font-weight: bold;
-  text-align: center;
-  width: 1200px;
+  text-align: left;
+  // width: 980px;
   // font-style: oblique;
-  font-family: "Gruppo", cursive;
+  font-family: "Helvetica", cursive;
   @media (max-width: 400px) {
     border: none;
     margin-top: 0px;
@@ -131,5 +155,6 @@ const Content2 = styled.div`
     width: 360px;
     font-size: 18px;
     padding: 10px 10px 10px 10px;
+    text-align: center;
   }
 `;

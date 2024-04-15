@@ -17,25 +17,24 @@ class NavBar extends Component {
             </li>
             <li>
               <NavLink to="/about">
-                <a href="">About us</a>
+                <a href="">About</a>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/skills">
+                <a href="">Skillset</a>
               </NavLink>
             </li>
             <li>
               <NavLink to="/works">
-                <a href="">My Work</a>
+                <a href="">Work</a>
               </NavLink>
             </li>{" "}
             <li>
-              <NavLink to="/skills">
-                <a href="">SkillSet</a>
-              </NavLink>
-            </li>
-            <li>
               <NavLink to="/contact">
-                <a href="">Contact US</a>
+                <a href="">Contact </a>
               </NavLink>
             </li>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             <label for="check" class="close-menu">
               <i class="fas fa-times"></i>
             </label>

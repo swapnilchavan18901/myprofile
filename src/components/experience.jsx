@@ -5,10 +5,13 @@ export const Experience = () => {
   return (
     <>
       <OrbitControls />
-      <group position-y={-1}>
-        <Avatar />
-      </group>
-      <ambientLight intensity={3} />
+
+      {/* <ambientLight intensity={0.1} /> */}
+      <pointLight position={[1, -1, 1]} />
+
+      <pointLight position={[1, 1, -1]} />
+      <Avatar />
+      <ambientLight intensity={1} />
     </>
   );
 };

@@ -10,9 +10,10 @@ import "./App.css";
 import "animate.css";
 import Sliderprjcts from "./components/Sliderprjcts";
 import Contactuspage from "./components/contactuspage";
-import LoadAvatar from "./components/loadavatar";
 import { Canvas } from "@react-three/fiber";
 import { Experience } from "./components/experience";
+import Contactuspage2 from "./components/contactuspage2";
+import Talkwithme from "./components/Talkwithme";
 
 function App() {
   return (
@@ -23,8 +24,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/works" element={<Sliderprjcts />} />
-        <Route path="/contact" element={<Contactuspage />} />
-        <Route path="/avatar" element={<LoadAvatar />} />
+        <Route path="/contact" element={<Contactuspage2 />} />
       </Routes>
     </BrowserRouter>
   );

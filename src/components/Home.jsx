@@ -1,67 +1,58 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-
+import * as THREE from "three";
 import bg from "../assets/bg2.png";
 import { Canvas } from "@react-three/fiber";
 import { Experience } from "./experience";
 
 function Home() {
   return (
-    <DIV name="home">
-      <Content1>
-        <Fade duration={1000}>
-          <Name>
-            <SD>Hi,my name is</SD>
-            <SD1>
-              <h2>Swapnil Chavan</h2>
-            </SD1>
-          </Name>
-          <br />
-          <Sdiv>
-            <DIV3>
-              <SMD>
-                <span>&nbsp; Web Designer & Web Developer &nbsp;</span>
-              </SMD>
-            </DIV3>
+    <>
+      <DIV name="home">
+        <Content1>
+          <Fade duration={1000}>
+            <Name>
+              {/* <SD>Hi,my name is</SD> */}
+              <SD1>SWAPNIL CHAVAN </SD1>
+            </Name>
+            <br />
+            <Sdiv>
+              <DIV3>
+                <SMD>
+                  <span>&nbsp; Web Designer & Web Developer &nbsp;</span>
+                </SMD>
+              </DIV3>
 
-            <h5>
-              <span2>Born in India raised by the 90'</span2>s,
-              <span2>
-                <br /> 3+ years of experience,
-              </span2>
-              <br />
-              <span2>Now available for you.</span2>
-              <br />
-              <br />
-              &nbsp; &nbsp;Hey, Are you looking for a
-              <span>
-                <b> PERFECT WEBSITE</b>{" "}
-              </span>
-              then you are in right place. Get a
-              <span>
-                <b> PROFESSIONAL RESULTS </b>
-              </span>{" "}
-              you are looking for, Your work will be done on time as you
-              required. Just reach out and know us what you need...
-            </h5>
-          </Sdiv>
-        </Fade>
-      </Content1>
-      <Content2>
-        {/* <IMG src={bg} /> */}
-        <Canvas shadows camera={{ position: [0, 2, 5], fov: 20 }}>
-          <mesh>
-            <color attach={"background"} args={["#ececec"]} />
-            <Experience />
-          </mesh>
-        </Canvas>
-      </Content2>
-      <MYMAIL>
-        <span>swapnilchavan18901@gmail.com </span>
-        <span2> -----------</span2>
-      </MYMAIL>
-    </DIV>
+              <h5>
+                <span>&#8220;</span>
+                Living like everyone else, what's the point. Life is but a
+                flicker of light in an eternitiy of darkness use it up while
+                can,BE EXTRAORDINARY.
+                <br />
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>&#8221;</span>
+              </h5>
+            </Sdiv>
+          </Fade>
+        </Content1>
+        <Content2>
+          <Canvas shadows camera={{ position: [2, 2, 5], fov: 19 }}>
+            <group position-y={-1}>
+              <mesh>
+                <Experience />
+              </mesh>
+            </group>
+          </Canvas>
+        </Content2>
+        <MYMAIL>
+          <span>swapnilchavan18901@gmail.com </span>
+          <span2> -----------</span2>
+        </MYMAIL>
+      </DIV>
+    </>
   );
 }
 
@@ -70,7 +61,6 @@ export default Home;
 const DIV = styled.div`
   display: flex;
   padding-left: 60px;
-  padding-top: 50px;
   height: 100vh;
 
   @media (max-width: 400px) {
@@ -82,15 +72,18 @@ const DIV = styled.div`
   }
 `;
 const SD1 = styled.div`
-  display: flex;
-
-  align-items: center;
-  font-size: clamp(10px, 5vw, 55px);
-  height: 80px;
   // color: #1a1110;
-  color: #fff;
+
+  font-size: 100px;
+  color: #bd85e9;
+  font-weight: 900;
+  font-family: "Helvetica", cursive;
+  line-height: 80px;
+  // height: 80px;
+  letter-spacing: -1px;
   @media (max-width: 400px) {
-    font-size: 25px;
+    font-size: 40px;
+    line-height: 40px;
   }
 `;
 const SD = styled.div`
@@ -98,7 +91,6 @@ const SD = styled.div`
   color: #fff;
 
   font-size: 22px;
-  font-weight: 500;
 
   @media (max-width: 400px) {
     // font-size: 25px;
@@ -120,30 +112,18 @@ const Sdiv = styled.div`
   flex-direction: column;
 
   h5 {
-    padding-top: 20px;
+    padding-top: 40px;
     text-align: left;
     padding-left: 10px;
-
-    span2 {
-      text-transform: uppercase;
-      font-weight: "bold";
-      font-size: 27px;
-      color: #fff;
-    }
-    span {
-      // color: #100c08;
-      color: #fff;
-
-      // letter-spacing: 0px;
-      word-spacing: 6px;
-      font-size: 24px;
-    }
-
     letter-spacing: 1.5px;
     // color: #282c35;
     color: #fff;
-
+    span {
+      font-size: 100px;
+      line-height: 30px;
+    }
     font-size: 22px;
+    line-height: 30px;
   }
   @media (max-width: 400px) {
     width: 350px;
@@ -181,7 +161,10 @@ const DIV3 = styled.div`
 `;
 const Content1 = styled.div`
   // padding-top: 30px;
+  padding-top: 50px;
+  width: 60%;
   @media (max-width: 400px) {
+    width: 0px;
   }
 `;
 const MYMAIL = styled.div`
@@ -209,6 +192,7 @@ const MYMAIL = styled.div`
     }
   }
   @media (max-width: 400px) {
+    background: green;
     display: none;
   }
 `;
@@ -218,21 +202,16 @@ const SMD = styled.div`
 
   span {
     padding: 10px;
-    font-weight: 300;
-    background: #100c08;
-    font-size: 25px;
+    font-weight: 900;
+    font-family: "Helvetica", cursive;
+    background: #292040;
+    font-size: 17px;
     color: #fff;
   }
 `;
 
 const Content2 = styled.div`
-  // padding-top: 70px;
-  // background: #fff;
-`;
-const IMG = styled.img`
-  width: 480px;
-  height: 350px;
   @media (max-width: 400px) {
-    width: 350px;
+    height: 340px;
   }
 `;
