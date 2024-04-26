@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myprofile/static/css/main.a8fd3687.css",
-    "main.js": "/myprofile/static/js/main.5a12cfbf.js",
+    "main.css": "/myprofile/static/css/main.e2f4409d.css",
+    "main.js": "/myprofile/static/js/main.d85b1c9c.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/myprofile/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/react.png": "/myprofile/static/media/react.0f7556bfc0e6f692fb19.png",
     "static/media/profile1.png": "/myprofile/static/media/profile1.56fd85197af57b115fb6.png",
@@ -17,13 +17,12 @@
     "static/media/mongodb.png": "/myprofile/static/media/mongodb.b7a3bd4142ea81a4616d.png",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/myprofile/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/CSS.png": "/myprofile/static/media/CSS.50f7c7e1b398a58c938c.png",
-    "static/media/prf.jpg": "/myprofile/static/media/prf.0050a7f601e849793326.jpg",
     "static/media/nodejs.png": "/myprofile/static/media/nodejs.6b1dcaab438a1c0ec772.png",
     "static/media/git.png": "/myprofile/static/media/git.4199b57f8547801b8a6c.png",
     "index.html": "/myprofile/index.html"
   },
   "entrypoints": [
-    "static/css/main.a8fd3687.css",
-    "static/js/main.5a12cfbf.js"
+    "static/css/main.e2f4409d.css",
+    "static/js/main.d85b1c9c.js"
   ]
 }
