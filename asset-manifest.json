@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/myprofile/static/css/main.e2f4409d.css",
-    "main.js": "/myprofile/static/js/main.ed368d53.js",
+    "main.js": "/myprofile/static/js/main.d3a4e5f5.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/myprofile/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/react.png": "/myprofile/static/media/react.0f7556bfc0e6f692fb19.png",
     "static/media/profile1.png": "/myprofile/static/media/profile1.56fd85197af57b115fb6.png",
@@ -23,6 +23,6 @@
   },
   "entrypoints": [
     "static/css/main.e2f4409d.css",
-    "static/js/main.ed368d53.js"
+    "static/js/main.d3a4e5f5.js"
   ]
 }
